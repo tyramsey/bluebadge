@@ -1,6 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Copyright() {
+  return (<div>
+    <h2>Copyright © </h2>
+    <p>Woodstock</p>
+    <p>{new Date().getFullYear()}</p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Copyright />
     </div>
   );
 }
